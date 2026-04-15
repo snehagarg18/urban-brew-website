@@ -1,50 +1,76 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #1e1e2f, #2c2c54);
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #1a1a2e, #16213e, #0f3460);
   color: white;
-  text-align: center;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.5);
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 15px;
   color: white;
   text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
+nav a:hover {
+  opacity: 1;
+}
+
+/* HERO */
 .hero {
-  padding: 100px 20px;
+  text-align: center;
+  padding: 140px 20px 100px;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 48px;
+  font-weight: 600;
 }
 
+.hero p {
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* BUTTON */
 button {
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 12px 26px;
   border: none;
-  background: #ff7a18;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
   color: white;
   cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #ffb347;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 122, 24, 0.4);
 }
 
+/* SECTIONS */
 section {
+  max-width: 900px;
+  margin: auto;
   padding: 60px 20px;
+  text-align: center;
 }
 
+/* GLASS CARD STYLE */
 .cards {
   display: flex;
   justify-content: center;
@@ -53,19 +79,29 @@ section {
 }
 
 .card {
-  background: rgba(255,255,255,0.1);
   padding: 20px;
-  border-radius: 10px;
-  width: 150px;
-  transition: 0.3s;
+  width: 160px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.1);
-  background: rgba(255,255,255,0.2);
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(255,255,255,0.15);
 }
 
+/* CONTACT */
+#contact p {
+  margin: 6px 0;
+  opacity: 0.8;
+}
+
+/* FOOTER */
 footer {
+  margin-top: 60px;
   padding: 20px;
-  background: black;
+  background: rgba(0,0,0,0.6);
+  font-size: 14px;
 }
